@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FEATURES
 
-## Getting Started
+### BASIC SETUP
 
-First, run the development server:
+### AUTH
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[] install Auth.js
+[] install Clerk
+[] implement Google OAuth
+[] implement email login
+[] implement authorization routes for signed-out & signed-in
+[] connect Clerk to Convex backend
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### DATABASES
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[] implement PostgreSQL Docker
+[] install Convex backend
+[] implement Drizzle ORM
+[] implement at least 1 PostgreSQL function
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### OTHER FEATURES
 
-## Learn More
+[] comments system
+[] stripe integration
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# UI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### FONTS
 
-## Deploy on Vercel
+[] apply at least 2 fonts
+[] work mobile-first
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### FAVICON
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[] change favicon to svg of your choice
+
+---
+
+# ROUTING
+
+### CLIENT ROUTES
+
+[] landing page
+[] app pages
+[] user settings
+[] account management
+
+### API ROUTES
