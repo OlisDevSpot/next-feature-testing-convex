@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito, Syne } from "next/font/google";
+import Providers from "./providers/Providers";
+import Navbar from "./_components/Navbar";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -25,10 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${nunito.className} ${syne.variable} antialiased`}>
-        {children}
-      </body>
-    </html>
+    <Providers>
+      <html lang="en">
+        <body className={`${nunito.className} ${syne.variable} antialiased`}>
+          <Navbar />
+          <main className="container mx-auto p-4">{children}</main>
+        </body>
+      </html>
+    </Providers>
   );
 }

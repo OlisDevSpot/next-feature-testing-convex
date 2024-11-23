@@ -14,16 +14,44 @@ Example: set up different font for h1, h2, h3, ... elements in the base layer
 
 ### DATABASES & BACKEND
 
-[] install Convex backend
-Need a GitHub repo to connect convex
+[x] install Convex backend
+[next-js docs](https://docs.convex.dev/quickstart/nextjs)
+
+1. Need a GitHub repo to connect convex
+2. npm install convex
+3. npx convex dev (should be opened at times of development for realtime functionality just like npm run dev)
+   First time you init a convex project it will ask you to log into your convex account & select which project
+4. create your first table (named it "convexGUI") & add some mock data
+5. create ConvexContextProvider component
+6. wrap the <body> in layout.tsx in ConvexContextProvider component
+7. create your first query in the `convex/` folder called getMockData from the convexGUI table
+8. in a client component, call the query with useQuery(api.convexGUI.getMockData)
+
+[x] Optional: extend the default import alias (@) to inlcude convex folder
+'@' refers to ./src/_ -> convex is outside the src folder. Extend it by including @convex/_ in the tsconfig file
 
 ### AUTH
 
-[] install Clerk
+[x] install Clerk
+
+1. create new clerk app
+2. npm install @clerk/nextjs
+3. set up env variables in .env.local
+4. create a middleware.ts and copy the script
+5. create a ClerkProvider component (if not using Convex)
+
+[x] connect Clerk to Convex backend
+
+- looks complicated at first but really isn't.. just make sure you pay attention to these pointers:
+  --- Followed WebDev Cody's thumbnail SaaS video -> great but uses a prev version of Clerk
+  --- Only differnece is middleware.ts file -> instead of `authMiddleware`, we're importing `clerkMiddleware` from @clerk/nextjs/server
+  --- Both the Clerk's docs for integrating with Convex, and the Convex docs for integrating with Clerk tell you to use the package `@clerk/clerk-react. THIS PACKAGE IS DOWNLOADED WHEN USING @clerk/nextjs. So can follow docs all the same
+--- create a `Providers.tsx` file which will wrap your entire <html>. Inside the Providers.tsx file specify everything from the docs
+  --- middleware.ts file helps you protect the routes that you specify. By default, all routes are PUBLIC. When a route is protected, it will prompt the user to login before continuing
+
 [] implement Google OAuth
 [] implement email login
 [] implement authorization routes for signed-out & signed-in
-[] connect Clerk to Convex backend
 
 ### OTHER FEATURES
 
@@ -33,6 +61,13 @@ Need a GitHub repo to connect convex
 ---
 
 # UI
+
+### COMPONENT LIBRARY
+
+[] install shadcn/ui
+
+- npx shadcn@latest init -d
+- add button: npx shadcn@latest add button
 
 ### FONTS
 
