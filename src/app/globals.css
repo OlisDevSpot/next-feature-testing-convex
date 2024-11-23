@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root,
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 @layer base {
   h1 {
     @apply text-4xl font-bold;
@@ -16,6 +23,22 @@
     @apply text-xl font-semibold;
     font-family: var(--font-syne);
   }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;

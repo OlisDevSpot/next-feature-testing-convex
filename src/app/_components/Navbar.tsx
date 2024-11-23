@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-neutral-100 p-4 flex">
+    <nav className="bg-neutral-100 p-4 flex fixed top-0 h-14 w-full items-center">
       <div className="container mx-auto">
         <Link
           href="/"
