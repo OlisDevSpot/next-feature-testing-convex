@@ -30,7 +30,7 @@ export default function RootLayout({
     <Providers>
       <html lang="en">
         <body
-          className={`${nunito.className} ${syne.variable} antialiased flex flex-col max-h-full border-blue-500 border-2`}
+          className={`${nunito.className} ${syne.variable} antialiased flex flex-col max-h-full`}
         >
           <Navbar />
           <main className="container mx-auto p-4 h-full pt-[72px]">
