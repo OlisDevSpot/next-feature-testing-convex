@@ -3,8 +3,8 @@
 ### BASIC SETUP
 
 - [x] create github repo
-      Super simple, a few clicks. For now, don't add license, .gitignore, or README from github GUI
-      Copy & pase these commands to push to repo & start a remote:
+  - Super simple, a few clicks. For now, don't add license, .gitignore, or README from github GUI
+  - Copy & pase these commands to push to repo & start a remote:
 
 ```
   git remote add origin https://github.com/OlisDevSpot/next-feature-testing-convex.git
@@ -13,9 +13,9 @@
 ```
 
 - [x] tailwind custom layers (base, components, utilities)
-      Set up tailwind's custom styles for basic app theme & look
-      Set up tailwind body, html, :root height width to 100%
-      Example: set up different font for h1, h2, h3, ... elements in the base layer
+  - Set up tailwind's custom styles for basic app theme & look
+  - Set up tailwind body, html, :root height width to 100%
+  - Example: set up different font for h1, h2, h3, ... elements in the base layer
 
 ### DATABASES & BACKEND
 
@@ -33,7 +33,7 @@
   8. in a client component, call the query with useQuery(api.convexGUI.getMockData)
 
 - [x] Optional: extend the default import alias (@) to inlcude convex folder
-      '@' refers to ./src/_ -> convex is outside the src folder. Extend it by including @convex/_ in the tsconfig file
+  - '@' refers to ./src/_ -> convex is outside the src folder. Extend it by including @convex/_ in the tsconfig file
 
 ### AUTH
 
