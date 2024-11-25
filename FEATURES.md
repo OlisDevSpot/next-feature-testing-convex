@@ -90,7 +90,7 @@
 
 ### STATE MANAGEMENT
 
-[] state management library (Zustand)
+[ ] state management library (Zustand)
 
 ---
 
@@ -98,10 +98,10 @@
 
 ### CLIENT ROUTES
 
-[] landing page
-[] app pages
-[] user settings
-[] account management
+[ ] landing page
+[ ] app pages
+[ ] user settings
+[ ] account management
 
 ### API ROUTES
 
@@ -109,11 +109,11 @@
 
 # WORKFLOW
 
-[] work mobile-first
+[ ] work mobile-first
 
 # FEATURES
 
 ### OTHER FEATURES
 
-[] comments system
-[] stripe integration
+[ ] comments system
+[ ] stripe integration
