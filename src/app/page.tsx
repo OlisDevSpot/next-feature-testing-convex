@@ -5,6 +5,7 @@ import { api } from "@convex/_generated/api";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { FormEvent, useRef } from "react";
+import { SignInButton } from "@clerk/nextjs";
 
 export default function Home() {
   const myData = useQuery(api.convexGUI.getMockData);
@@ -47,6 +48,7 @@ export default function Home() {
             <form
               className="flex flex-col gap-4 rounded-lg"
               onSubmit={(e) => handleCreate(e)}
+              autoComplete="off"
             >
               <div className="flex flex-col">
                 <input
@@ -88,7 +90,7 @@ export default function Home() {
               <Button type="submit">Submit</Button>
             </form>
           </div>
-          <div className="grid md:grid-cols-2 gap-4 w-full place-content-start h-full overflow-y-scroll overflow-x-hidden rounded-lg">
+          <div className="grid md:grid-cols-2 gap-4 w-full place-content-start h-full overflow-y-scroll overflow-x-hidden rounded-lg pb-4">
             {myData.map(({ _id, first_name, last_name, age }) => (
               <div
                 key={_id}
@@ -104,7 +106,12 @@ export default function Home() {
           </div>
         </div>
       ) : (
-        <div>Not Authenticated. Please log in</div>
+        <div>
+          Not Authenticated. Please{" "}
+          <span className="text-blue-800 hover:text-blue-400 transition">
+            <SignInButton mode="modal">sign In</SignInButton>
+          </span>
+        </div>
       )}
     </>
   );
