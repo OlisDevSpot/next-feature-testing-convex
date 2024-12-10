@@ -81,10 +81,12 @@
 - [x] install shadcn/ui
   - npx shadcn@latest init -d
   - add button: npx shadcn@latest add button
+- [ ] use framer motion for animations
 
 ### STATE MANAGEMENT
 
-- [ ] state management library (Zustand)
+- [ ] client-state management library (Zustand)
+- [x] server-state management library (react-query)
 
 ---
 

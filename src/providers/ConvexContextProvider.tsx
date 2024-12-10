@@ -2,7 +2,7 @@
 
 import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { ReactNode } from "react";
-import Navbar from "../_components/Navbar";
+import Navbar from "../app/_components/Navbar";
 
 const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 

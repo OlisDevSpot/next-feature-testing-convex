@@ -4,24 +4,24 @@
 
 ### AUTH
 
-[] install Auth.js
-[] install Clerk
-[] implement Google OAuth
-[] implement email login
-[] implement authorization routes for signed-out & signed-in
-[] connect Clerk to Convex backend
+- [ ] install Auth.js
+- [x] install Clerk
+- [x] implement Google OAuth
+- [x] implement email login
+- [x] implement authorization routes for signed-out & signed-in
+- [x] connect Clerk to Convex backend
 
 ### DATABASES
 
-[] implement PostgreSQL Docker
-[] install Convex backend
-[] implement Drizzle ORM
-[] implement at least 1 PostgreSQL function
+- [ ] implement PostgreSQL Docker
+- [x] install Convex backend
+- [ ] implement Drizzle ORM
+- [ ] implement at least 1 PostgreSQL function
 
 ### OTHER FEATURES
 
-[] comments system
-[] stripe integration
+- [ ] comments system
+- [ ] stripe integration
 
 ---
 
@@ -29,12 +29,12 @@
 
 ### FONTS
 
-[] apply at least 2 fonts
-[] work mobile-first
+- [x] apply at least 2 fonts
+- [ ] work mobile-first
 
 ### FAVICON
 
-[] change favicon to svg of your choice
+- [x] change favicon to svg of your choice
 
 ---
 
@@ -42,9 +42,9 @@
 
 ### CLIENT ROUTES
 
-[] landing page
-[] app pages
-[] user settings
-[] account management
+- [ ] landing page
+- [x] app pages
+- [ ] user settings
+- [ ] account management
 
 ### API ROUTES

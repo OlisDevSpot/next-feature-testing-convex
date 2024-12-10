@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito, Syne } from "next/font/google";
-import Providers from "./providers/Providers";
+import Providers from "../providers/Providers";
 import Navbar from "./_components/Navbar";
 
 const nunito = Nunito({
