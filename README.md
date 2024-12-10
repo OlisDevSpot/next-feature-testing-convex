@@ -1,5 +1,7 @@
 # FEATURES
 
+READ THE FEATURES.md file!
+
 ### BASIC SETUP
 
 ### AUTH
